@@ -1,0 +1,279 @@
+:root {
+  --color: #2196f3;
+  --black--color: #000000;
+  --text-color: #212121;
+  --background-color: #2f303a;
+  --text-info: #757575;
+  --block-color: #ffffff;
+  --background: #238de4;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+/* ------------------Лого-------------*/
+
+.header-logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--color);
+  text-decoration: none;
+}
+.header-logo-studio {
+  color: var(--black--color);
+}
+/*----------меню-top--------*/
+.header-list-item {
+  list-style-type: none;
+}
+.header-link:hover,
+.header-link:focus {
+  color: var(--color);
+}
+
+.header-link-current {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--color);
+}
+
+.header-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+
+/*------------КОНТАКТЫ---------*/
+.link {
+  text-decoration: none;
+}
+.link-contact:hover,
+.link-contact:focus {
+  color: var(--color);
+}
+.link-contact {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  list-style-type: none;
+  color: var(--text-info);
+}
+/*-------------Вступ----------*/
+.main-link {
+  background: var(--background-color);
+}
+.main-item {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--block-color);
+}
+.header-btn:hover,
+.header-btn:focus {
+  background-color: var(--background);
+}
+.header-btn {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border: none;
+  cursor: pointer;
+  background-color: var(--color);
+  color: var(--block-color);
+}
+
+/*---------Наши преимущества--------*/
+
+.hero-item {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+.hero-link-info {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+.hero-info {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-info);
+}
+/*----------Чем занимаешься--------*/
+.images-item {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+/*-----------Наша команда----------*/
+.personal-item {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+.personal-link-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+.personal-item-info {
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--text-info);
+}
+/*--------------Лого меню-----------*/
+.footer {
+  background: var(--background-color);
+}
+.footer-logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--color);
+}
+.footer-logo-studio {
+  color: var(--block-color);
+}
+/*------------Контакт-----------*/
+
+.address-info {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--block-color);
+}
+.address-contact:hover,
+.address-contact:focus {
+  color: var(--color);
+}
+.address-contact {
+  font-style: normal;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ================== ПОРТФОЛИО ===============*/
+/*--------------------контакты-----------------*/
+.hero-logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--color);
+}
+.hero-logo-studio {
+  color: var(--black--color);
+}
+.header-link-current {
+  color: var(--color);
+}
+/*-------------Главное меню-----------------*/
+.button-item {
+  cursor: pointer;
+}
+
+.button-item.main {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background: var(--background);
+}
+.button-item:hover,
+.button-item:focus {
+  background: var(--background);
+  color: #ffffff;
+}
+.button-item {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
+.product-button {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowarp;
+  clip-path: insert(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/*-------------Наши проекты---------------*/
+
+.images-product {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--text-color);
+}
+.images-item-product {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--text-info);
+}
+/*------------Контакты-----------*/
+.address-contact-info {
+  background: var(--background-color);
+}
+.address {
+  font-style: normal;
+  color: var(--block-color);
+  text-decoration: none;
+}
