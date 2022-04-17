@@ -7,12 +7,19 @@
   --block-color: #ffffff;
   --background: #238de4;
 }
-
 body {
   font-family: "Roboto", sans-serif;
 }
+
 /* ------------------Лого-------------*/
 
+.hero-logo {
+  margin-left: 15px;
+}
+.header-logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 .header-logo {
   font-family: "Raleway";
   font-weight: 700;
@@ -26,6 +33,12 @@ body {
   color: var(--black--color);
 }
 /*----------меню-top--------*/
+.header-item {
+  list-style-type: none;
+}
+.header-item-contact {
+  list-style-type: none;
+}
 .header-list-item {
   list-style-type: none;
 }
@@ -52,7 +65,37 @@ body {
   color: var(--text-color);
 }
 
+/*-------------------------------ХЕДЕР-------------------------*/
+
+.header-item {
+  display: flex;
+  margin-left: 93px;
+}
+.header-item li {
+  display: block;
+  margin-right: 40px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 /*------------КОНТАКТЫ---------*/
+.header-item-contact {
+  display: flex;
+}
+.header-item-contact-item {
+  margin-left: auto;
+}
+
+.header-item-contact .header-list + .header-list {
+  margin-left: 50px;
+}
+
+/*------------------ Хевер топ ---------------*/
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
 .link {
   text-decoration: none;
 }
@@ -73,11 +116,22 @@ body {
 .main-link {
   background: var(--background-color);
 }
+.main-link {
+  background-color: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+
 .main-item {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
   text-transform: uppercase;
   color: var(--block-color);
 }
@@ -85,23 +139,57 @@ body {
 .header-btn:focus {
   background-color: var(--background);
 }
+
 .header-btn {
-  font-family: "Roboto";
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
   border: none;
   cursor: pointer;
-  background-color: var(--color);
+  text-align: center;
+  margin-top: var(--typical-margin);
+  padding: 10px 32px;
+  min-width: 200px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
   color: var(--block-color);
+  background: var(--background);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /*---------Наши преимущества--------*/
-
+.hero {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+.container-hero {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header-list-item {
+  display: flex;
+}
+.hero-link {
+  width: 270px;
+}
+.hero-link:not(:last-child) {
+  margin-right: 30px;
+}
+.hero-item {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowarp;
+  clip-path: insert(100%);
+  clip: rect(0 0 0 0);
+}
 .hero-item {
   font-weight: 700;
   font-size: 36px;
@@ -125,6 +213,30 @@ body {
   color: var(--text-info);
 }
 /*----------Чем занимаешься--------*/
+
+.container-images {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header-list-item-images {
+  list-style-type: none;
+  display: flex;
+  margin-top: 50px;
+}
+
+.images-link:not(:last-child) {
+  margin-right: 30px;
+}
+.images {
+  margin-bottom: 94px;
+  margin-top: 94px;
+}
+.images-item {
+  display: block;
+}
 .images-item {
   font-weight: 700;
   font-size: 36px;
@@ -134,6 +246,37 @@ body {
   color: var(--text-color);
 }
 /*-----------Наша команда----------*/
+
+.personal-link {
+  padding-bottom: 30px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+    0px 2px 1px rgb(0 0 0 / 20%);
+  border-radius: 0px 0px 4px 4px;
+}
+.container-personal {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.personal {
+  display: block;
+}
+.personal {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.header-list-item-personal {
+  margin-top: 50px;
+  display: flex;
+  list-style-type: none;
+}
+.personal-link:not(:last-child) {
+  margin-right: 30px;
+}
 .personal-item {
   font-weight: 700;
   font-size: 36px;
@@ -156,8 +299,19 @@ body {
   color: var(--text-info);
 }
 /*--------------Лого меню-----------*/
+.container-footer {
+  display: block;
+}
+
+.address-container {
+  display: block;
+}
 .footer {
   background: var(--background-color);
+}
+.footer-logo {
+  padding-left: 40px;
+  padding-bottom: 20px;
 }
 .footer-logo {
   font-family: "Raleway";
@@ -171,6 +325,36 @@ body {
 .footer-logo-studio {
   color: var(--block-color);
 }
+.address p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+/*----------------------Footer------------------------------------*/
+.header-list-item-footer {
+  display: block;
+  line-height: 30px;
+  list-style-type: none;
+}
+.footer {
+  background-color: var(--background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+footer {
+  margin-top: 94px;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*------------Контакт-----------*/
 
 .address-info {
@@ -194,6 +378,15 @@ body {
 
 /* ================== ПОРТФОЛИО ===============*/
 /*--------------------контакты-----------------*/
+
+.hero-nav {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .hero-logo {
   font-family: "Raleway";
   font-weight: 700;
@@ -203,12 +396,106 @@ body {
   text-decoration: none;
   color: var(--color);
 }
+
 .hero-logo-studio {
   color: var(--black--color);
 }
 .header-link-current {
   color: var(--color);
 }
+.header-list-item-hero {
+  list-style-type: none;
+}
+.header-list-item-hero {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.header-list-item-hero .header-link:last-child {
+  margin-right: 0;
+}
+/*--------------ХЕДЕР------------------------*/
+/*------------ КОНТАКТ-МАИЛ------------------*/
+.header-list-item-hero {
+  display: flex;
+  margin-left: 91px;
+}
+.header-list-item-hero li {
+  display: block;
+  margin-right: 40px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-contact-list-item {
+  list-style-type: none;
+  display: flex;
+}
+.header-contact-list-item .header-list + .header-list {
+  margin-left: 50px;
+}
+.header-contact-list-item {
+  margin-left: auto;
+}
+/*--------------------HERO-NAV---------------------*/
+.hero-nav {
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+}
+
+.header-list-hero {
+  margin-top: 40px;
+}
+
+.header-contact-list-item li {
+  margin-left: 333px;
+}
+/*------------------------НАШИ САЙТЫ------------------*/
+.header-list-item-button {
+  list-style-type: none;
+}
+.header-list-item-button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.header-list-item-button {
+  margin-top: 94px;
+}
+.container-button {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header-list-item-button {
+  padding: 0;
+  margin: 0;
+}
+.header-list-item-button li {
+  margin-right: 8px;
+}
+.header-list-item-button {
+  margin-bottom: 90px;
+}
+
+.button-item {
+  cursor: pointer;
+  padding: 6px 22px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  border: none;
+}
+
 /*-------------Главное меню-----------------*/
 .button-item {
   cursor: pointer;
@@ -268,6 +555,17 @@ body {
   letter-spacing: 0.03em;
   color: var(--text-info);
 }
+/*----------------------------------КАРТИНКИ = 9 --------------*/
+.header-list-item-link {
+  list-style-type: none;
+}
+.header-list-item-link {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
 /*------------Контакты-----------*/
 .address-contact-info {
   background: var(--background-color);
@@ -276,4 +574,20 @@ body {
   font-style: normal;
   color: var(--block-color);
   text-decoration: none;
+}
+.address-contact-info {
+  margin-top: 20px;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header-list-item-list {
+  list-style-type: none;
+}
+.address-link {
+  margin-top: 9px;
 }
