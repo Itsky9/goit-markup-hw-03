@@ -10,6 +10,27 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+/*-------------------------Хедер портфолио новое ------------*/
+.header-logo {
+  padding-right: 93px;
+}
+.hero-logo {
+  padding-right: 91px;
+}
+.container-nav {
+  margin-bottom: 75px;
+}
+.list li {
+  margin-left: 40px;
+}
+.list {
+  display: flex;
+}
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
 /* ------------------Лого-------------*/
 
