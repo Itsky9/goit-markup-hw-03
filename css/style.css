@@ -234,6 +234,10 @@ h6 {
   color: var(--text-info);
 }
 /*----------Чем занимаешься------SECTION--*/
+
+.images-item:not(:last-child) {
+  margin-right: 30px;
+}
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
